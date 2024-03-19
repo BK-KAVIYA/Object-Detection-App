@@ -1,0 +1,89 @@
+/* Overall styling for the app */
+.App {
+  height: 100%;
+  padding: 0 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222; /* Dark background */
+  color: #fff; /* Light text for all elements except code */
+}
+
+/* Styling for direct children of .App */
+.App > * {
+  margin: 3px 0;
+}
+
+/* Styling for the header section */
+.header {
+  text-align: center;
+}
+
+/* Additional styling for paragraphs within the header */
+.header p {
+  margin: 5px 0;
+}
+
+/* Styling for code blocks */
+.code {
+  padding: 5px;
+  color: #f9f1a5; /* Yellow for code text */
+  background-color: #282c34; /* Dark blue for code background */
+  border-radius: 5px;
+}
+
+/* Styling for images and videos within the content section */
+.content > img,
+.content > video {
+  display: none;
+  width: 100%;
+  max-width: 720px;
+  max-height: 500px;
+  border-radius: 10px;
+}
+
+/* Styling for the content section */
+.content {
+  position: relative;
+  border-color: #fff; /* White border for content in dark background */
+}
+
+/* Styling for canvas within the content section */
+.content > canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Button styling */
+button {
+  text-decoration: none;
+  color: #000; /* Black text for buttons */
+  background-color: #fff; /* White background for buttons */
+  border: 2px solid #000;
+  margin: 0 5px;
+  padding: 10px 20px; /* Increased padding for better click target */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition effect */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  color: #fff; /* White text for hover */
+  background-color: #000; /* Black background for hover */
+  border: 2px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Increase shadow on hover */
+}
+
+/* Active state for buttons */
+button:active {
+  transform: scale(0.95); /* Add scale effect when button is clicked */
+  box-shadow: none; /* Remove shadow when button is clicked */
+}
+
